@@ -7,7 +7,7 @@ def GCD(x: Int, y: Int):Int= y match{
 def prime(x :Int,y:Int = 2):Boolean = y match{
     case z if z==x => true
     case z if GCD(x,z)>1 => false
-    case z => prime(x,z+1)
+    case z => prime(x,y+1)
 }
 
 object O1 extends App{
